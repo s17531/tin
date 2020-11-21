@@ -11,8 +11,9 @@
 <body>
     <header>
         <h1>ABC</h1>
-        <img src="../images/logo.png" alt="ACME HR Department Logo">
         <h6>SYSTEM OBSŁUGI SZKOŁY JĘZYKOWEJ</h6>
+        <img src="../images/logo.png" alt="ACME HR Department Logo">
+
     </header>
     <nav>
         <ul>
@@ -20,7 +21,7 @@
             <li><a href="student-list.html">Uczniowie</a></li>
             <li><a href="group-list.html">Grupy</a></li>
             <li><a href="teacher-list.html">Lektorzy</a></li>
-            <li><a href="assignment-list.html">Przypisania uczniów</a></li>
+            <li><a href="enrolment-list.html">Przypisania uczniów</a></li>
         </ul>
     </nav>
     <main>
@@ -36,12 +37,13 @@
             <label for="email">Wykształcenie<sup>*</sup></label>
             <input type="text" name="education" id="education" value="jan.kowalski@gmail.com">
 
-            <label for="email">Data urodzenia:<sup>*</sup></label>
-            <input type="date" name="birthdate" id="birthdate" value="2010-03-04">
+            <label for="email">Język:<sup>*</sup></label>
+            <input type="date" name="language" id="language" value="angielski">
 
             <div class="form-buttons">
-                <!-- <input type="submit" value="Edytuj" class="form-button-submit" /> -->
-                <a href="" class="form-button-cancel">Aktualizuj</a>
+                <input type="submit" value="Aktualizuj" class="form-button-submit" />
+                <a href="teacher-list.html" class="form-button-cancel">Anuluj</a>
+
             </div>
         </form>
 

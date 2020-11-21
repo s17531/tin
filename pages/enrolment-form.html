@@ -5,50 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" />
-    <title>ACME HR Demo</title>
+    <title>ABC</title>
 </head>
 
 <body>
     <header>
-        <h1>ACME HR</h1>
-        <img src="../images/logo.png" alt="ABC Logo">
+        <h1>ABC</h1>
         <h6>SYSTEM OBSŁUGI SZKOŁY JĘZYKOWEJ</h6>
+        <img src="../images/logo.png" alt="ABC Logo">
+
     </header>
     <nav>
         <ul>
             <li><a href="../index.html">Strona główna</a></li>
             <li><a href="student-list.html">Uczniowie</a></li>
             <li><a href="group-list.html">Grupy</a></li>
-            <li><a href="assignment-list.html" class="active">Przypisania</a></li>
+            <li><a href="teacher-list.html">Lektorzy</a></li>
+            <li><a href="enrolment-list.html" class="active">Przypisania uczniów</a></li>
         </ul>
     </nav>
     <main>
         <h2>Strona główna</h2>
         <form class="form">
 
-            <label for="employee">Uczeń:<sup>*</sup></label>
-            <select id="employee">
+            <label for="student">Uczeń:<sup>*</sup></label>
+            <select id="student">
                 <option>--Wybierz ucznia--</option>
+                <option>Jan Kowalski</option>
+                <option>Adam Nowak</option>
             </select>
 
 
-            <label for="department">Grupa:<sup>*</sup></label>
-            <select id="department">
+            <label for="group">Grupa:<sup>*</sup></label>
+            <select id="group">
                 <option>--Wybierz grupę--</option>
+                <option>A1-A-2020</option>
+                <option>B1-B-2020</option>
             </select>
 
-            <label for="salary">Data od:<sup>*</sup></label>
-            <input type="number" name="salary" id="salary">
-
-            <label for="date-from">Data do:<sup>*</sup></label>
+            <label for="date-from">Data przypisania:<sup>*</sup></label>
             <input type="date" name="date-from" id="date-from">
 
-            <label for="salary">Pensja:<sup>*</sup></label>
-            <input type="date" name="date-to" id="date-to">
+            <label for="comments">Uwagi:<sup>*</sup></label>
+            <input type="text" name="comments" id="comments">
 
             <div class="form-buttons">
                 <input type="submit" value="Dodaj" class="form-button-submit" />
-                <a href="" class="form-button-cancel">Anuluj</a>
+                <a href="enrolment-list.html" class="form-button-cancel">Anuluj</a>
             </div>
         </form>
 

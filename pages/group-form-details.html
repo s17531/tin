@@ -25,33 +25,27 @@
         </ul>
     </nav>
     <main>
-        <h2>Nowa grupa</h2>
+        <h2>Szczegóły grupy</h2>
         <form class="form">
 
             <label for="firstName">Numer:<sup>*</sup></label>
-            <input type="text" name="nr" id="nr">
+            <input type="text" name="nr" id="nr" value="A1-A-2020" disabled>
 
             <label for="level">Poziom:<sup>*</sup></label>
-            <input type="text" name="level" id="level" value="A1">
+            <input type="text" name="level" id="level" value="A1" disabled>
 
             <label for="language">Język:<sup>*</sup></label>
-            <select name="language" id="language">
-                <option value="">--Wybierz język--</option>
-                <option>angielski</option>
-                <option>niemiecki</option>
-            </select>
+            <input type="text" name="language" id="language" value="angielski" disabled>
 
             <label for="hours">Liczba godzin:<sup>*</sup></label>
-            <input type="number" name="hours" id="hours">
+            <input type="number" name="hours" id="hours" value="180" disabled>
 
             <label for="teacher">Lektor:<sup>*</sup></label>
-            <select name="teacher" id="teacher">
-                <option value="">--Wybierz lektora--</option>
-                <option selected>Adam Nowak</option>
-            </select>
+            <input type="text" name="teacher" id="teacher" value="Adam Nowak" disabled>
+
             <div class="form-buttons">
-                <input type="submit" value="Dodaj" class="form-button-submit" />
-                <a href="group-list.html" class="form-button-cancel">Anuluj</a>
+                <!-- <input type="submit" value="Dodaj" class="form-button-submit" /> -->
+                <a href="group-form-edit.html" class="form-button-cancel">Edytuj</a>
             </div>
         </form>
 
