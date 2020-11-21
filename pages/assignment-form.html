@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>ACME HR Demo</title>
+</head>
+
+<body>
+    <header>
+        <h1>ACME HR</h1>
+        <img src="../images/logo.png" alt="ABC Logo">
+        <h6>SYSTEM OBSŁUGI SZKOŁY JĘZYKOWEJ</h6>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="student-list.html">Uczniowie</a></li>
+            <li><a href="group-list.html">Grupy</a></li>
+            <li><a href="assignment-list.html" class="active">Przypisania</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Strona główna</h2>
+        <form class="form">
+
+            <label for="employee">Uczeń:<sup>*</sup></label>
+            <select id="employee">
+                <option>--Wybierz ucznia--</option>
+            </select>
+
+
+            <label for="department">Grupa:<sup>*</sup></label>
+            <select id="department">
+                <option>--Wybierz grupę--</option>
+            </select>
+
+            <label for="salary">Data od:<sup>*</sup></label>
+            <input type="number" name="salary" id="salary">
+
+            <label for="date-from">Data do:<sup>*</sup></label>
+            <input type="date" name="date-from" id="date-from">
+
+            <label for="salary">Pensja:<sup>*</sup></label>
+            <input type="date" name="date-to" id="date-to">
+
+            <div class="form-buttons">
+                <input type="submit" value="Dodaj" class="form-button-submit" />
+                <a href="" class="form-button-cancel">Anuluj</a>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+        Krzysztof Żebrowski, s17531
+    </footer>
+</body>
+
+</html>

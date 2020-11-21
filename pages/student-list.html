@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Szkoła językowa ABC</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>ABC</h1>
+        <img src="../images/logo.png" alt="ABC Logo">
+        <h6>SYSTEM OBSŁUGI SZKOŁY JĘZYKOWEJ</h6>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="#" class="active">Uczniowie</a></li>
+            <li><a href="group-list.html">Grupy</a></li>
+            <li><a href="teacher-list.html">Lektorzy</a></li>
+            <li><a href="assignment-list.html">Przypisania uczniów</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Lista uczniów</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Imię</th>
+                    <th>Nazwisko</th>
+                    <th>E-mail</th>
+                    <th>Data urodzenia</th>
+                    <th>Akcje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td>
+                    <td>Kowalski</td>
+                    <td>jan.kowalski@acme.com</td>
+                    <td>2010-03-04</td>
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a href="student-form-details.html" class="list-actions-button-details">Szczegóły</a>
+                            </li>
+                            <li>
+                                <a href="student-form-edit.html" class="list-actions-button-edit">Edytuj</a>
+                            </li>
+                            <li>
+                                <a href="" class="list-actions-button-delete">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>Nowak</td>
+                    <td>adam.nowak@acme.com</td>
+                    <td>20104-03-04</td>
+                    <td>
+                        <ul class="list-actions">
+                            <li>
+                                <a href="student-form-details.html" class="list-actions-button-details">Szczegóły</a>
+                            </li>
+                            <li>
+                                <a href="" class="list-actions-button-edit">Edytuj</a>
+                            </li>
+                            <li>
+                                <a href="" class="list-actions-button-delete">Usuń</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="student-form.html" class="button-add">Dodaj nowego ucznia</a></p>
+    </main>
+    <footer>
+        Krzysztof Żebrowski, s17531
+    </footer>
+</body>
+
+</html>
