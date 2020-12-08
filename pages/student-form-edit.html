@@ -26,16 +26,20 @@
     </nav>
     <main>
         <h2>Edytuj dane ucznia</h2>
-        <form class="form">
+        <form class="form edit">
 
             <label for="firstName">Imię:<sup>*</sup></label>
             <input type="text" name="firstName" id="firstName" value="Jan">
+            <span id="errorFirstName" class="errors-text"></span>
 
-            <label for="secondName">Nazwisko:<sup>*</sup></label>
-            <input type="text" name="secondName" id="secondName" value="Kowalski">
+
+            <label for="lastName">Nazwisko:<sup>*</sup></label>
+            <input type="text" name="lastName" id="lastName" value="Kowalski">
+            <span id="errorLasttName" class="errors-text"></span>
 
             <label for="email">E-mail:<sup>*</sup></label>
             <input type="text" name="email" id="email" value="jan.kowalski@gmail.com">
+            <span id="errorEmail" class="errors-text"></span>
 
             <label for="birthdate">Data urodzenia:<sup>*</sup></label>
             <input type="date" name="birthdate" id="birthdate" value="2010-03-04">

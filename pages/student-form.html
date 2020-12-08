@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/javascript" src="../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../js/validationStForm.js"></script>
     <title>ABC</title>
 </head>
 
@@ -26,13 +28,13 @@
     </nav>
     <main>
         <h2>Nowy uczeń</h2>
-        <form class="form">
+        <form class="form" novalidate onsubmit="return validateForm();">
 
             <label for="firstName">Imię:<sup>*</sup></label>
-            <input type="text" name="firstName" id="firstName">
+            <input type="text" name="firstName" id="firstName" placeholder="2-60 znaków">
 
-            <label for="secondName">Nazwisko:<sup>*</sup></label>
-            <input type="text" name="secondName" id="secondName">
+            <label for="lastName">Nazwisko:<sup>*</sup></label>
+            <input type="text" name="lastName" id="lastName" placeholder="2-60 znaków">
 
             <label for="email">E-mail:<sup>*</sup></label>
             <input type="text" name="email" id="email">
@@ -41,9 +43,11 @@
             <input type="date" name="birthdate" id="birthdate">
 
             <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
                 <input type="submit" value="Dodaj" class="form-button-submit" />
                 <a href="student-list.html" class="form-button-cancel">Anuluj</a>
             </div>
+
         </form>
 
     </main>

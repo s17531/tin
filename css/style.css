@@ -201,6 +201,11 @@ textarea {
     display: grid;
     grid-template-columns: 150px 300px;
     row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.edit {
+    grid-template-columns: 150px 300px 1fr;
 }
 
 .form select, 
@@ -213,6 +218,11 @@ textarea {
     border-radius: 5px;
     padding: 0.5rem;
     width: 100%;
+}
+
+.form input.error-input,
+.form select.error-input {
+  border: 3px solid #e74c3c
 }
 
 .form label {
@@ -229,14 +239,16 @@ abbr[title='required'] {
 }
 
 .form-buttons {
+    /* grid-column: 1 / span 2; */
     grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-end: 3;
 }
 
 .form-button-submit,
 .form-button-cancel {
     width: 100%;
 }
+
 .form-button-cancel {
     box-sizing: border-box;
     display: block;
@@ -245,7 +257,10 @@ abbr[title='required'] {
 .form-button-submit {
     margin-bottom: 0.5rem;
 }
-
+.errors-text {
+    font-size: 0.85em;
+    line-height: 2.25rem;
+  }
 @media all and (max-width: 720px) {
     header {
         flex-direction: column;
