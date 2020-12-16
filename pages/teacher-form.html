@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" />
+    <script type="application/javascript" src="../js/validationCommon.js"></script>
+    <script src="../js/validationTForm.js"></script>
     <title>ABC</title>
 </head>
 
@@ -26,25 +28,34 @@
     </nav>
     <main>
         <h2>Nowy lektor</h2>
-        <form class="form">
+        <form class="form edit" onsubmit="return validateForm();">
 
             <label for="firstName">Imię:<sup>*</sup></label>
             <input type="text" name="firstName" id="firstName">
+            <span id="errorFirstName" class="errors-text"></span>
 
-            <label for="secondName">Nazwisko:<sup>*</sup></label>
-            <input type="text" name="secondName" id="secondName">
+            <label for="lastName">Nazwisko:<sup>*</sup></label>
+            <input type="text" name="lastName" id="lastName">
+            <span id="errorLastName" class="errors-text"></span>
 
-            <label for="email">Język:<sup>*</sup></label>
-            <input type="text" name="language" id="language">
+            <label for="language">Język:<sup>*</sup></label>
+            <select name="language" id="language">
+                <option value="">--Wybierz język--</option>
+                <option>angielski</option>
+                <option>niemiecki</option>
+            </select>
+            <span id="errorLanguage" class="errors-text"></span>
 
-            <label for="email">Wykształcenie:<sup>*</sup></label>
+            <label for="education">Wykształcenie</label>
             <input type="text" name="education" id="education">
 
             <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text"></p>
                 <input type="submit" value="Dodaj" class="form-button-submit" />
                 <a href="teacher-list.html" class="form-button-cancel">Anuluj</a>
             </div>
         </form>
+
 
     </main>
     <footer>
